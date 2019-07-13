@@ -1,0 +1,4 @@
+#define TutorialVersionMajor @Tutorial_VERSION_MAJOR@
+#define TutorialVersionMinor @Tutorial_VERSION_MINOR@
+
+#cmakedefine USE_MYMATH

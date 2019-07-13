@@ -10,6 +10,11 @@ configure_file(
 	)
 
 include_directories("${PROJECT_BINARY_DIR}")
+include_directories("${PROJECT_SOURCE_DIR}/MathFunctions")
+
+add_subdirectory("MathFunctions")
 
 
-add_executable("Tutorial" tutorial.cxx)
+add_executable("Tutorial-App" tutorial.cxx)
+target_link_libraries("Tutorial-App" lib_mathfunctions)
+

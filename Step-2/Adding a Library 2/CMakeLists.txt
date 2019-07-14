@@ -11,6 +11,7 @@ configure_file(
 
 include_directories("${PROJECT_BINARY_DIR}")
 
+# if want to turn option ON in command-line, use -D<XXX ON>, attention there is no space in -D and <XXX ON>.
 option(USE_MYMATH "Use my math" OFF)
 
 if(USE_MYMATH)
